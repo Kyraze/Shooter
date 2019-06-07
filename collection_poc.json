@@ -1,0 +1,233 @@
+{
+	"id": "d71cb4fe-f585-4c95-bc78-9e9fb1b931a2",
+	"name": "POC_ARA",
+	"allTests": [],
+	"timestamp": "2019-05-13T15:10:16.778Z",
+	"collection_id": "46b1a6dc-5865-4318-9c3f-8bbe6d10f81c",
+	"folder_id": 0,
+	"target_type": "collection",
+	"environment_id": "0",
+	"data": [],
+	"delay": 0,
+	"count": 3,
+	"collection": {
+		"id": "46b1a6dc-5865-4318-9c3f-8bbe6d10f81c",
+		"name": "POC_ARA",
+		"description": null,
+		"auth": null,
+		"events": [
+			{
+				"listen": "prerequest",
+				"script": {
+					"id": "816a6a53-3c08-4b74-a7bf-f3514eb667a3",
+					"type": "text/javascript",
+					"exec": [
+						""
+					]
+				}
+			},
+			{
+				"listen": "test",
+				"script": {
+					"id": "5f4114ef-6777-4633-b9c8-939916521e2c",
+					"type": "text/javascript",
+					"exec": [
+						""
+					]
+				}
+			}
+		],
+		"variables": [
+			{
+				"key": "id_poc",
+				"value": "000000000000",
+				"type": "text",
+				"enabled": true,
+				"description": ""
+			}
+		],
+		"order": [
+			"71d37553-05e5-4d85-a9b1-103a27c3fe60",
+			"b87bb1e8-de72-4ef5-88d4-74d8b4fa15c5"
+		],
+		"folders_order": [],
+		"owner": "5347754",
+		"favorite": false,
+		"type": "collection",
+		"depth": 0
+	},
+	"folder": null,
+	"environment": null,
+	"globals": [
+		{
+			"key": "id_poc\n",
+			"value": "000000000000",
+			"enabled": false
+		},
+		{
+			"key": "error_case",
+			"value": null,
+			"enabled": true
+		},
+		{
+			"key": "ok_case",
+			"value": null,
+			"enabled": true
+		}
+	],
+	"results": [
+		{
+			"name": "POC_ARA_",
+			"id": "71d37553-05e5-4d85-a9b1-103a27c3fe60",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"ok_case": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 3,
+					"fail": 0
+				},
+				"ok_case": {
+					"pass": 0,
+					"fail": 3
+				}
+			},
+			"times": [
+				"26",
+				"36",
+				"34"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"ok_case": false
+				},
+				{
+					"Status code is 200": true,
+					"ok_case": false
+				},
+				{
+					"Status code is 200": true,
+					"ok_case": false
+				}
+			],
+			"time": "34",
+			"totalRequestTime": 96,
+			"iterationResults": {}
+		},
+		{
+			"name": "POC_ARA_ Following Test",
+			"id": "b87bb1e8-de72-4ef5-88d4-74d8b4fa15c5",
+			"totalTime": 0,
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"tests": {
+				"Status code is 200": true,
+				"ok_case": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 3,
+					"fail": 0
+				},
+				"ok_case": {
+					"pass": 3,
+					"fail": 0
+				}
+			},
+			"times": [
+				"47",
+				"44",
+				"41"
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"ok_case": true
+				},
+				{
+					"Status code is 200": true,
+					"ok_case": true
+				},
+				{
+					"Status code is 200": true,
+					"ok_case": true
+				}
+			],
+			"time": "41",
+			"totalRequestTime": 132,
+			"iterationResults": {}
+		}
+	],
+	"totalPass": 9,
+	"totalFail": 3,
+	"totalTime": 228,
+	"lifecycle": "done",
+	"requests": [
+		{
+			"name": "POC_ARA_",
+			"id": "71d37553-05e5-4d85-a9b1-103a27c3fe60",
+			"url": "http://poc.com",
+			"time": "34",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 3,
+					"fail": 0
+				},
+				"ok_case": {
+					"pass": 0,
+					"fail": 3
+				}
+			}
+		},
+		{
+			"name": "POC_ARA_ Following Test",
+			"id": "b87bb1e8-de72-4ef5-88d4-74d8b4fa15c5",
+			"url": "http://poc.com",
+			"time": "41",
+			"responseCode": {
+				"code": 200,
+				"name": "OK",
+				"detail": {
+					"name": "OK",
+					"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+				}
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 3,
+					"fail": 0
+				},
+				"ok_case": {
+					"pass": 3,
+					"fail": 0
+				}
+			}
+		}
+	],
+	"synced": false
+}
